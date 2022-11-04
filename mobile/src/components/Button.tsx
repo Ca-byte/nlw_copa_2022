@@ -8,7 +8,7 @@ interface ButtonProps extends IButtonProps {
 export function Button({title, type= 'PRIMARY', ...rest}: ButtonProps){
 	return(
 		<ButtonNativeBase 
-			w="full"
+			w={'96'}
 			h={14}
 			rounded="sm"
 			fontSize="md"
