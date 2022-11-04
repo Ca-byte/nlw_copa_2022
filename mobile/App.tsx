@@ -9,6 +9,7 @@ import {
 
 import { Loading } from './src/components/Loading';
 import { SignIn } from './src/screens/SignIn';
+import { CreateSweepstake } from './src/screens/CreateSweepstake';
 import { AuthContentProvider } from "./src/contexts/AuthContext";
 
 
@@ -28,7 +29,7 @@ export default function App() {
         translucent
         />
         {
-          fontsLoaded ? <SignIn /> : <Loading /> 
+          fontsLoaded ? <CreateSweepstake /> : <Loading /> 
         }
       </AuthContentProvider>
     </NativeBaseProvider>
