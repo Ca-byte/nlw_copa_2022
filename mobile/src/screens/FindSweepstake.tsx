@@ -1,7 +1,9 @@
-import { Heading, Text, VStack } from "native-base";
+import { Heading, VStack, Icon } from "native-base";
+import { Octicons } from '@expo/vector-icons'
 import { Header } from "../components/Header";
 import { Input } from "../components/Input";
 import { Button } from "../components/Button";
+
 
 
 export function FindSweepstake(){
@@ -18,7 +20,8 @@ export function FindSweepstake(){
             placeholder="What is your sweepstake code?"
           />
           <Button 
-          title="Search Sweepstake"
+            title="Search Sweepstake"
+            leftIcon={<Icon as={Octicons} name="search" color="black" size="md"/>}
           />
 
         </VStack>
